@@ -2,7 +2,8 @@ class Dog
   @@all = []
 
   def initialize(name)
-    @@save = save
+    @name = name
+    self.save
   end
 
   def self.all
@@ -10,8 +11,9 @@ class Dog
   end
 
   def self.print_all
-    @@all.each do |names|
-      puts "#{names}"
+    @@all.each do |dog|
+      puts dog.name
+     end
     end
 
     def save
@@ -22,8 +24,9 @@ class Dog
       @@all.clear
     end
 
-    def self.class_variable_get(name_of_class_variable)
+    def name 
+      @name
     end
-  end
 
+  
   end
