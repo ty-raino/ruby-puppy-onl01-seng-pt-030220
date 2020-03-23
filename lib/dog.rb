@@ -14,7 +14,7 @@ class Dog
       puts "#{names}"
     end
 
-    def save 
+    def save
       @@all << self
     end
 
